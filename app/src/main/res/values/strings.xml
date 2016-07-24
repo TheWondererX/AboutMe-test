@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">AboutMe</string>
+    <string name="app_name">App3</string>
+    <string name="surname">Ultratonov</string>
+    <string name="name">Rembo</string>
+    <string name="lastName">Grigoryevich</string>
+    <string name="email">contra</string>
+
+    <string-array name="itProf">
+        <item name="PC">PC</item>
+        <item name="Excel">Excel</item>
+        <item name="Word">Word</item>
+        <item name="Java">Java</item>
+        <item name="linux">linux</item>
+        <item name="lots more">lots more</item>
+    </string-array>
 </resources>

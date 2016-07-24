@@ -23,4 +23,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
         android:text="Massive fire power from helicopter." />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16dp"
+        android:text="Change text"/>
 </LinearLayout>
