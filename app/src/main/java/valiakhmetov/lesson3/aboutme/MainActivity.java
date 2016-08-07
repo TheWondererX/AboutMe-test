@@ -1,16 +1,22 @@
 package valiakhmetov.lesson3.aboutme;
 
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
+import android.support.v7.widget.PopupMenu;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    TextView textView1, textView2;
+    TextView textView, textView1, textView2;
     ImageView imageView;
     Button button1, button2;
+    PopupMenu menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,29 @@ public class MainActivity extends AppCompatActivity {
         setButtonBehavior1();
         setButtonBehavior2();
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+        switch (id){
+            case R.id.show_hello: {
+                Toast.makeText(this, "Hello there!", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+            case R.id.exit: {
+                System.exit(0);
+                return true;
+            }
+            default:
+                return false;
+        }
     }
 
     private void initViews() {
@@ -54,4 +83,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-}// времени не было до делывать
+
+
+}

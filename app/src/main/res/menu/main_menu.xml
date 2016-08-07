@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/show_hello" android:title="Показать приветствие"
+        android:icon="@mipmap/ic_launcher" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/copy" android:title="Copy">
+        <menu>
+            <item android:id="@+id/copy_all_txt" android:title="Copy all text"/>
+            <item android:id="@+id/copy_first_str" android:title="Copy first string"
+                  android:visible="false"/>
+            <item android:id="@+id/copy_name" android:title="Copy Name"/>
+            <item android:id="@+id/copy_email" android:title="Copy Email"/>
+        </menu>
+    </item>
+    <item android:id="@+id/exit" android:title="Выйти из программы"/>
+
+</menu>
